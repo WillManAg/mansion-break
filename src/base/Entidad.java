@@ -32,4 +32,13 @@ public abstract class Entidad implements IInteractuable {
 		return id == other.id && Objects.equals(nombre, other.nombre);
 	}
 	
+	// RA4.f: Permitimos el acceso de lectura desde cualquier paquete
+	public char getId() {
+	    return id;
+	}
+
+	public String getNombre() {
+	    return nombre;
+	}
+	
 }
